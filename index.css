@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+:root { 
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
+
+}
+* { 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a { 
+    list-style: none;
+    color:rgb(255, 0, 0);
+    font-weight: bolder;
+    text-decoration: none;
+}
+li { 
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+header img { 
+    width:100px;
+}
+header { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 10px 30px;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.308);
+}
+nav { 
+    display:flex;
+}
+
+
+nav li { 
+    padding:7px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    margin: 10px;
+    border-radius:20px;
+    background-color: #5c6f7e;
+}
+nav li > a { 
+    color:#ffffff
+}
+nav li:hover { 
+    background-color: #3a5da8;
+    transition-duration: 0.7s;
+}
+nav li > a:hover { 
+    color:#ffffff;
+    transition-duration: 0.7s;
+}
+.barra { 
+    
+    background-color: #5c6f7e;
+    width:85%;
+    margin-top:30px;
+    padding:10px;
+    margin-left:100px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding-left:15px;
+    border-radius: 0px 50px 0px 0px;
+}
+.barra h1 { 
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+#box { 
+    background-color: #2d3945;
+    width:95%;
+    height:500px;
+    margin: auto ;
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;
+
+}
+#left { 
+    background-color: #2d3945;
+    width:55%
+}
+#left h1 { 
+    text-align: center;
+    color: white;
+    padding-top:60px;
+    font-size:3rem;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+}
+#left p { 
+    color:white;
+    font-size: 2rem;
+    text-align: center;
+    margin-top:0px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    
+}
+#right { 
+    background-image: url(img/fundocamiseta1.png);
+    background-size: cover;
+    background-position: right;
+    padding-left:300px;
+    width:45%
+}
+#botao { 
+    width:300px;
+    background-color: #ffffff;
+    height:60px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 200px;
+    margin-top:40px;
+    text-align: center;
+    
+
+}
+#botao a { 
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    text-transform: uppercase;
+}
+#botao:hover { 
+    background-color: black;
+    transition-duration: 0.5
+    ;
+}
+#botao a:hover { 
+    color:white;
+    transition-duration: 0.5s;
+}
+
+
+
+
+                /* CONFIGURAÇÃO ABAIXO ------------- */
+                @media (max-width:500px) { 
+                    header { 
+                        flex-direction: column;
+                        padding:0;
+                        margin:  0 auto;
+                        width:100%
+                    } 
+                    body { 
+                        overflow-x: hidden
+                    }
+                
+                    header img { 
+                        margin-top:30px;
+                    }
+                    nav li { 
+                        margin-top:25px;
+                        margin: 10px;
+                        padding: 5px 15px;
+                        font-size:1.3rem;
+                        margin-top:20px;
+                        margin-bottom:20px
+                    }
+                    .barra { 
+                    
+                        background-color: #5c6f7e;
+                        width:85%;
+                        margin-top:30px;
+                        padding:10px;
+                        margin-left:40px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        display: flex;
+                        padding-left:15px;
+                        border-radius: 0px 50px 0px 0px;
+                    }
+                    .barra h1 { 
+                        color:white;
+                        font-family: 'Roboto Condensed', sans-serif;;
+                    }
+                    #box { 
+                        background-color: #2d3945;
+                        width:95%;
+                        height:300px;
+                        margin: auto ;
+                        margin-top:30px;
+                        display: flex;
+                        flex-direction: row;
+                    
+                    }
+                    #left { 
+                        background-color: #2d3945;
+                        width:65%
+                    }
+                    #left h1 { 
+                        font-size:1.8rem;
+                        padding: 10px;
+                        margin-top:0px
+                    }
+                    #left p {
+                        font-size:1.3rem;
+                        
+                    } 
+                        
+                    
+                    #botao { 
+                        width:200px;
+                        height: 40px;
+                        margin-left:20px;
+                        margin-top:20px
+                    }
+                    #botao a {
+                        font-size: 1.4rem;
+                    }
+                    #right { 
+                        background-image: url(img/fundocamiseta1.png);
+                        background-size: 350px 300px;
+                        margin-top:20px;
+                        margin-left:-30px;
+                        background-repeat: no-repeat;
+                        width:35%
+                    }
+                    
+                    
+                }
+                @media (max-width:414px) { 
+                    header { 
+                        flex-direction: column;
+                        padding:0;
+                        margin: 0 auto;
+                        width:100%
+                    } 
+                
+                    header img { 
+                        margin-top:30px;
+                    }
+                    nav li { 
+                        margin-top:25px;
+                        padding: 6px;
+                        margin: 4px;
+                        font-size:1rem;
+                        margin-top:20px;
+                        margin-bottom:20px
+                    }
+                    .barra { 
+                    
+                        background-color: #5c6f7e;
+                        width:90%;
+                        margin-top:20px;
+                        padding:0px;
+                        margin-left:20px;
+                        font-size:0.9rem;
+                        font-family: Arial, Helvetica, sans-serif;
+                        display: flex;
+                        padding-left:15px;
+                        border-radius: 0px 50px 0px 0px;
+                    }
+                    .barra h1 { 
+                        color:rgb(255, 255, 255);
+                        font-family: 'Roboto Condensed', sans-serif;;
+                    }
+                    #box { 
+                        background-color: #2d3945;
+                        width:95%;
+                        height:250px;
+                        margin:auto;
+                        margin-top:30px;
+                        display: flex;
+                        flex-direction: row;
+                    
+                    }
+                    #left { 
+                        background-color: #2d3945;
+                        width:65%
+                    }
+                    #left h1 { 
+                        font-size:1.3rem
+                        
+                    }
+                    #left p {   
+                        font-size: 1rem;
+                    }
+                    #botao { 
+                        width:130px;
+                        height: 40px;
+                        margin-left:55px;
+                        margin-top:10px
+                    }
+                    
+                    #right { 
+                        background-image: url(img/fundocamiseta1.png);
+                        background-size: 300px 230px;
+                        margin-top:20px;
+                        margin-left: -150px;
+                        background-repeat: no-repeat;
+                        width:35%
+                    }  
+                }
+                @media (max-width:380px) { 
+                    #box { 
+                        background-color: #2d3945;
+                        width:95%;
+                        height:250px;
+                        margin: auto ;
+                        margin-top:30px;
+                        display: flex;
+                        flex-direction: row;
+                    
+                    }
+                    #left { 
+                        background-color: #2d3945;
+                        width:70%
+                    }
+                    #left h1 { 
+                        font-size:1rem
+                    }
+
+                    #right { 
+                        background-image: url(img/fundocamiseta1.png);
+                        background-size: 300px 250px;
+                        margin-top:20px;
+                        margin-left:-100px;                        
+                        width:30%
+                    }
+                    #left h1 { 
+                        font-size:1.2rem
+                        
+                    }
+                    #left p {   
+                        font-size: 1rem;
+                    }
+                    #botao { 
+                        width:120px;
+                        height: 40px;
+                        margin-left:20px;
+                        margin-top:10px
+                    }
+                    #botao a { 
+                        font-size: 1rem;
+                    }
+                }
+                @media (max-width:320px) { 
+                    #box { 
+                        background-color: #2d3945;
+                        width:95%;
+                        height:250px;
+                        margin: auto ;
+                        margin-top:30px;
+                        display: flex;
+                        flex-direction: row;
+                    
+                    }
+                    #left { 
+                        background-color: #2d3945;
+                        width:70%
+                    }
+
+                    #right { 
+                        background-image: url(img/fundocamiseta1.png);
+                        background-size: 230px 250px;
+                        margin-top:20px;
+                        margin-left:-160px;                        
+                        width:30%
+                    }
+                    #left h1 { 
+                        font-size:1.2rem
+                        
+                    }
+                    #left p {   
+                        font-size: 1rem;
+                    }
+                    #botao { 
+                        width:120px;
+                        height: 30px;
+                        margin-left:15px;
+                        margin-top:10px;
+                       
+                    
+
+                    }
+                    #botao a { 
+                        font-size: 1.2rem;
+                    }
+                }
